@@ -3,9 +3,9 @@ variable "tenant_namespaces" {
     name      = string
     tenant_id = string
   }))
-  default = {
-    "chubb" = { name = "Chubb", tenant_id = "chubb123" },
-    "ibm"   = { name = "IBM", tenant_id = "ibm546" }
+  default = {"chubb" = { name = "Chubb", tenant_id = "chubb123" },
+    "ibm"   = { name = "IBM", tenant_id = "ibm546" },
+  "rafico" = { name = "RAFICO", tenant_id = "rafi789" }
 
   }
 }
