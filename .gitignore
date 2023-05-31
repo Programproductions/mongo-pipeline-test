@@ -1,0 +1,9 @@
+dev.tfvars
+staging.tfvars
+prod.tfvars
+google_credentials.json
+node_modules/
+*.tfstate
+*.terraform
+.terraform.lock.hcl
+terraform*
