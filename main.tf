@@ -12,14 +12,15 @@ resource "google_storage_bucket" "backend" {
   }
 }
 
-variable "project" {
-  type        = string
-  description = "ID Google project test"
-  default     = "cybercorp-dev1"
-}
 
-variable "region" {
-  type        = string
-  description = "Region Google project"
-  default     = "australia-southeast1"
+
+
+resource "google_storage_bucket" "test" {
+  name          = "delete-me-cyber-corp-600"
+  force_destroy = false
+  location      = "US"
+  storage_class = "STANDARD"
+  versioning {
+    enabled = true
+  }
 }
